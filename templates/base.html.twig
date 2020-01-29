@@ -2,11 +2,218 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            {% block stylesheets %}
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/colors/red.css">
+
+
+        {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block header %}
+        <header id="header-container" class="fullwidth transparent">
+            <!-- Header -->
+            <div id="header">
+                <div class="container">
+                    
+                    <!-- Left Side Content -->
+                    <div class="left-side">
+                        
+                        <!-- Logo -->
+                        <div id="logo">
+                            <a href="index.html"><img src="/images/logo.png" alt=""></a>
+                        </div>
+
+                        <!-- Main Navigation -->
+                        <nav id="navigation">
+                            <ul id="responsive">
+                                <li><a href="{{ path('Homepage') }}" class="current">Accueil</a></li>
+                                <li><a href="{{path('ad_index')}}">Annonces</a></li>
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="#">Categorie</a></li>
+                            </ul>
+                        
+                        </nav>
+                        <div class="clearfix">
+                    
+                
+                    </div>
+                        <!-- Main Navigation / End -->
+                        
+                    </div>
+                    <!-- Left Side Content / End -->
+
+
+                    <!-- Right Side Content / End -->
+                    <div class="right-side">
+
+                        <div class="header-widget" style="padding-top:25px;">
+                            <a href="pages-login.html" ><i class="icon-feather-log-in"></i> <span>Se connecter / S'inscrire</span></a>
+                        </div>
+                
+                        <!-- Mobile Navigation Button -->
+                
+                        <span class="mmenu-trigger" >
+                            <button class="hamburger hamburger--collapse" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </span>
+            
+                    </div>
+                    <!-- Right Side Content / End -->
+
+                </div>
+            </div> 
+            <!-- Header / End -->
+        </header> 
+        {% endblock %}
+        {% block body %}
+        
+        {% endblock %}
+        {% block footer %}
+            <div id="footer">	
+                <!-- Footer Top Section -->
+                <div class="footer-top-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+            
+                                <!-- Footer Rows Container -->
+                                <div class="footer-rows-container">
+                                    
+                                    <!-- Left Side -->
+                                    <div class="footer-rows-left">
+                                        <div class="footer-row">
+                                            <div class="footer-row-inner footer-logo">
+                                                <img src="/images/logo2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Right Side -->
+                                    <div class="footer-rows-right">
+            
+                                        <!-- Social Icons -->
+                                        <div class="footer-row">
+                                            <div class="footer-row-inner">
+                                                <ul class="footer-social-links">
+                                                    <li>
+                                                        <a href="#" title="Facebook" data-tippy-placement="bottom" data-tippy-theme="light">
+                                                            <i class="icon-brand-facebook-f"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" title="Twitter" data-tippy-placement="bottom" data-tippy-theme="light">
+                                                            <i class="icon-brand-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" title="Google Plus" data-tippy-placement="bottom" data-tippy-theme="light">
+                                                            <i class="icon-brand-google-plus-g"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" title="LinkedIn" data-tippy-placement="bottom" data-tippy-theme="light">
+                                                            <i class="icon-brand-linkedin-in"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                                <!-- Footer Rows Container / End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Top Section / End -->
+            
+                <!-- Footer Middle Section -->
+                <div class="footer-middle-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-2 col-md-3">
+                                <div class="footer-links">
+                                    <h3>Pour les Clients</h3>
+                                    <ul>
+                                        <li><a href="freelancers-grid-layout-full-page.html"><span>Parcourir les Professionels</span></a></li>
+                                        <li><a href="#"><span>Offres et Abonnement</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+            
+                            <!-- Links -->
+                            <div class="col-xl-2 col-lg-2 col-md-3">
+                                <div class="footer-links">
+                                    <h3>Liens Utiles</h3>
+                                    <ul>
+                                        <li><a href="pages-contact.html"><span>Contact</span></a></li>
+                                        <li><a href="#"><span>Politique de Confidentialité</span></a></li>
+                                        <li><a href="#"><span>Conditions d'utilisation</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+            
+                            <!-- Links -->
+                            <div class="col-xl-2 col-lg-2 col-md-3">
+                                <div class="footer-links">
+                                    <h3>Comptes</h3>
+                                    <ul>
+                                        <li><a href="pages-login.html"><span>Se connecter</span></a></li>
+                                        <li><a href="dashboard.html"><span>Mon compte</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+            
+                            <!-- Newsletter -->
+                            <div class="col-xl-4 col-lg-4 col-md-12">
+                                <h3><i class="icon-feather-mail"></i> Inscrivez-vous à une newsletter</h3>
+                                <p>Actualités hebdomadaires, analyses et conseils de pointe en matière de recherche d’emploi.</p>
+                                <form action="#" method="get" class="newsletter">
+                                    <input type="text" name="fname" placeholder="Entrer votre adresse email">
+                                    <button type="submit"><i class="icon-feather-arrow-right"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Middle Section / End -->
+                
+                <!-- Footer Copyrights -->
+                <div class="footer-bottom-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                © 2019 <strong>Pro</strong>. Tous droits réservés.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Copyrights / End -->
+            </div>
+        {% endblock %}
+        {% block javascripts %}
+            <script src="/js/jquery-3.3.1.min.js"></script>
+            <script src="/js/jquery-migTaux-3.0.0.min.js"></script>
+            <script src="/js/mmenu.min.js"></script>
+            <script src="/js/tippy.all.min.js"></script>
+            <script src="/js/simplebar.min.js"></script>
+            <script src="/js/bootstrap-slider.min.js"></script>
+            <script src="/js/bootstrap-select.min.js"></script>
+            <script src="/js/snackbar.js"></script>
+            <script src="/js/clipboard.min.js"></script>
+            <script src="/js/counterup.min.js"></script>
+            <script src="/js/magnific-popup.min.js"></script>
+            <script src="/js/slick.min.js"></script>
+            <script src="/js/custom.js"></script>
+        {% endblock %}
+        
     </body>
 </html>

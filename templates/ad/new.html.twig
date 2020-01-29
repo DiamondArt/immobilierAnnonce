@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block title %} Création d'une annonce {% endblock %}
+{% block body %}
+<div id="wrapper">
+    <div class="clearfix"></div>
+	<!-- Spacer -->
+		<div class="margin-top-90"></div>
+	<!-- Spacer / End-->
+	<!-- Page Content
+	================================================== -->
+ <div class="container">
+	<div class="row">
+		   <h2 class=>Ajout d'une annonce</h2>
+
+	<div class="col-lg-3"></div>
+	  <div class="col-lg-7" style="text-align:justify;">
+	    <br>
+        {{ form_start(form) }}	
+		{{form_widget(form)}}
+		{{form_end(form)}}
+		 <button class="button">Ajouter une annonce </button>
+			<br>
+			<br>
+		 <br>
+	  </div>
+
+	 </div>
+  </div>
+</div>
+{% endblock %}
